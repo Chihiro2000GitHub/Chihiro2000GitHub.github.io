@@ -5,7 +5,7 @@ permalink: /notes/
 author_profile: true
 ---
 
-My interest in mental health research began with an experience that led me to think deeply about what it means to support people facing psychological difficulties. Over time, this concern gradually developed into a strong interest in psychiatry. I then started learning from introductory and standard texts in the field, including:
+My interest in mental health research comes from a long-standing concern with what it means to support people facing psychological difficulties. Over time, this led me to develop a strong interest in psychiatry. I then started learning from introductory and standard texts in the field, including:
 
 - [*An Introduction to Psychiatry*](https://www.chikumashobo.co.jp/product/9784480684110/) (in Japanese, 『はじめての精神医学』), by Professor Toshiya Murai
 - [*Standard Textbook of Psychiatry*](https://www.igaku-shoin.co.jp/book/detail/108315) (in Japanese, 『標準精神医学』)
