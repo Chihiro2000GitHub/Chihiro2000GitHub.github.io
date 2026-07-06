@@ -12,9 +12,9 @@ For more on my research motivation, please see the following page: [Why Economic
 
 ## Work in Progress
 
-- *An Economic Model of Delusions: A Bayesian Inference Perspective*
+- *An Economic Model of Delusions: A Bayesian Inference Perspective* joint with [*Hiroki Oi*](https://researchmap.jp/hiroki.oi)
 
-- *Social Epidemiology of Mental Health*  
+- *Social Epidemiology of Mental Health*  joint with Takashi Oshio
 
 ## Master's Thesis
 
