@@ -9,7 +9,7 @@ My interest in mental health research comes from a long-standing concern with wh
 
 - [*An Introduction to Psychiatry*](https://www.chikumashobo.co.jp/product/9784480684110/) (in Japanese, 『はじめての精神医学』), by Professor Toshiya Murai
 - [*Standard Textbook of Psychiatry*](https://www.igaku-shoin.co.jp/book/detail/108315) (in Japanese, 『標準精神医学』)
-- Japanese edition of [*Kaplan & Sadock’s Synopsis of Psychiatry*](https://www.wolterskluwer.com/en/know/synopsis-of-psychiatry)
+- Nassir Ghaemi’s The Concepts of Psychiatry (Japanese edition, [『現代精神医学原論』](https://www.msz.co.jp/book/detail/08913/))
 
 These readings helped me appreciate the intellectual depth of psychiatry and how much there is to learn from the field. Since then, I have wanted to understand how my own training in economics might contribute, even modestly, to this important discipline.
 
