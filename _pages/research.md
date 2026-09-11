@@ -12,7 +12,7 @@ For more on my research motivation, please see the following page: [Why Economic
 
 ## Work in Progress
 
-- *Rational Delusions* (joint with [*Hiroki Oi*](https://orcid.org/0000-0002-7900-3751))
+- *Rational Delusions* (joint with [Hiroki Oi](https://orcid.org/0000-0002-7900-3751))
 
 - *Social Epidemiology of Mental Health*  (joint with Takashi Oshio)
 
