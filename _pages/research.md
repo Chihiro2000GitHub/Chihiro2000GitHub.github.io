@@ -14,7 +14,7 @@ For more on my research motivation, please see the following page: [Why Economic
 
 ***Rational Delusions*** (joint with [Hiroki Oi](https://orcid.org/0000-0002-7900-3751))
 
-We develop a rational-inattention model of delusional belief updating in which limited information-processing capacity provides a unified account of the “paradox of delusions”: the coexistence of two seemingly contradictory features, jumping to conclusions (JTC)—large shifts toward delusional beliefs based on weak evidence—and bias against disconfirmatory evidence (BADE)—insufficient belief revision even in response to strong counterevidence.
+We develop a rational-inattention model of delusional belief updating in which an agent optimally chooses how to process and interpret information about the world, taking information-processing costs into account. The model provides a unified account of the “paradox of delusions,” characterized by the coexistence of two seemingly contradictory features: jumping to conclusions (JTC)—large shifts toward delusional beliefs based on weak evidence—and bias against disconfirmatory evidence (BADE)—insufficient belief revision even in response to strong counterevidence.
 
 ***Social Epidemiology of Mental Health*** (joint with Takashi Oshio)
 
