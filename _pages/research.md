@@ -22,7 +22,7 @@ We explore how multidimensional socioeconomic deprivation is associated with men
 
 ## Master's Thesis
 
-***Testing a Macroeconomic Model of Mental Health: Evidence from Micro-Level Causal Inference***
+***Testing a Macroeconomic Model of Mental Health: Evidence from Micro-Level Causal Inference*** <br>
 M.A. thesis, Hitotsubashi University, 2026. [PDF](/files/MasterThesis_ChihiroWatanabe.pdf)
 
 In this thesis, I replicate in Julia a heterogeneous-agent life-cycle model in which mental health shapes economic decisions through rumination and pessimistically distorted beliefs. I evaluate its quantitative implications using PSID panel data and the staggered adoption of state mental health parity laws within a staggered difference-in-differences framework, combining structural modeling with reduced-form causal inference.
