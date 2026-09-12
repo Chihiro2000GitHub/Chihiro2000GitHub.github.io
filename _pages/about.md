@@ -11,15 +11,15 @@ redirect_from:
 
 I am a Ph.D. student in Economics at Hitotsubashi University in Tokyo, Japan.
 
-My research interests are in health economics and computational psychiatry. <br> I am also a Research Assistant at [QuantEcon](https://quantecon.org/team/). 
+My research lies at the intersection of economics and computational psychiatry. <br> I am also a research assistant at [QuantEcon](https://quantecon.org/team/). 
 
-My curriculum vitae is available [here](/files/CV_ChihiroWatanabe.pdf).
+My CV is available [here](/files/CV_ChihiroWatanabe.pdf).
 
 ## Research Interests
 
-- Mental health
-- Health economics
-- Computational psychiatry
+- Health Economics (Mental Health)
+- Information Economics (Rational Inattention)
+- Computational Psychiatry
 
 For more details, please see my [Research](/research/) page.
 
