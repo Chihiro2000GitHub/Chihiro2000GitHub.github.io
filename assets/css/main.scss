@@ -72,3 +72,32 @@
   width: 230px;
   font-style: normal;
 }
+
+/* Mobile profile photo */
+@media (max-width: 767px) {
+
+  .author__avatar {
+    display: block !important;
+    float: none !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .author__avatar img {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    aspect-ratio: 1 / 1;
+    object-fit: cover !important;
+    object-position: center 28% !important;
+    border-radius: 8px !important;
+  }
+
+  .author__photo-caption {
+    width: 100% !important;
+    text-align: center !important;
+    margin-top: 6px;
+  }
+
+}
