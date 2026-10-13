@@ -45,14 +45,14 @@
 
 
 /* =========================================
-   Profile Photo: Shared Settings
+   Profile: Common Settings
    ========================================= */
 
 .sidebar div.author__avatar {
   display: block !important;
   float: none !important;
   width: 100% !important;
-  max-width: 230px !important;
+  max-width: 210px !important;
   height: auto !important;
 }
 
@@ -68,11 +68,9 @@
   box-sizing: border-box;
 }
 
-/* Photo caption */
-
 .sidebar .author__photo-caption {
   width: 100%;
-  max-width: 230px;
+  max-width: 210px;
   font-size: 0.68em;
   color: #888;
   text-align: center;
@@ -84,12 +82,12 @@
 
 
 /* =========================================
-   Mobile Layout: Below 925px
+   Narrow Screens: Below 850px
    ========================================= */
 
-@media screen and (max-width: 924.99px) {
+@media screen and (max-width: 849.98px) {
 
-  /* Full-width photo on homepage */
+  /* Homepage: full-width photo */
 
   .sidebar div.author__avatar,
   .sidebar .author__photo-caption {
@@ -97,15 +95,12 @@
     max-width: 100% !important;
   }
 
-  /* Center profile information */
-
   .sidebar .author__content {
     display: block !important;
     float: none !important;
     width: 100% !important;
     max-width: none !important;
-    margin-left: auto !important;
-    margin-right: auto !important;
+    margin: 0 auto !important;
     padding: 0 !important;
     text-align: center !important;
     box-sizing: border-box;
@@ -115,8 +110,6 @@
   .sidebar .author__bio {
     text-align: center !important;
   }
-
-  /* Center Follow button */
 
   .sidebar .author__urls-wrapper {
     display: block !important;
@@ -128,36 +121,40 @@
 
 
   /* -----------------------------------------
-     Subpages: Compact Profile
+     Subpages: Fixed Compact Profile
      ----------------------------------------- */
 
   .sidebar .author-profile--subpage {
-    display: grid;
+    display: grid !important;
     grid-template-columns: 88px minmax(0, 1fr);
     column-gap: 16px;
     row-gap: 8px;
     align-items: start;
+
+    width: 100%;
+    max-width: 424px;
+    box-sizing: border-box;
   }
 
-  /* Small photo on subpages */
+  /* Fixed photo size */
 
   .sidebar .author-profile--subpage div.author__avatar {
     width: 88px !important;
+    min-width: 88px !important;
     max-width: 88px !important;
     margin: 0 !important;
   }
 
-  /* Hide photo caption on subpages */
+  /* Hide caption */
 
   .sidebar .author-profile--subpage .author__photo-caption {
     display: none !important;
   }
 
-  /* Profile text beside photo */
+  /* Fixed profile text area */
 
   .sidebar .author-profile--subpage .author__content {
-    display: block !important;
-    width: auto !important;
+    width: 100% !important;
     max-width: none !important;
     min-width: 0;
     margin: 0 !important;
@@ -170,12 +167,12 @@
     text-align: left !important;
   }
 
-  /* Follow button on subpages */
+  /* Follow button */
 
   .sidebar .author-profile--subpage .author__urls-wrapper {
     grid-column: 2;
     display: block !important;
-    width: auto !important;
+    width: 100% !important;
     margin: 0 !important;
     text-align: left !important;
   }
@@ -183,70 +180,133 @@
 
 
 /* =========================================
-   Desktop: Fixed Sidebar Width
+   Wide Screens: 850px and Above
+   Fixed Sidebar + Flexible Main Content
    ========================================= */
 
-@media screen and (min-width: 925px) {
+@media screen and (min-width: 850px) {
 
-  /* Fixed width for the left sidebar */
+  /* Two-column layout */
+
+  #main {
+    display: grid;
+    grid-template-columns: 230px minmax(0, 1fr);
+    column-gap: 32px;
+    align-items: start;
+  }
+
+  /* Fixed-width left sidebar */
+
   #main > .sidebar {
+    grid-column: 1;
+    grid-row: 1;
+
+    position: sticky !important;
+    top: 80px;
+
+    float: none !important;
     width: 230px !important;
     min-width: 230px !important;
     max-width: 230px !important;
+
+    height: auto !important;
+    max-height: calc(100vh - 90px);
+    overflow-y: auto;
+
+    margin: 0 !important;
+    padding: 0 !important;
     box-sizing: border-box;
   }
 
-  /* Flexible width for the main content */
-  #main > .sidebar + .page,
-  #main > .sidebar + .archive {
+  /* Flexible right content */
+
+  #main > .page,
+  #main > .archive {
+    grid-column: 2;
+    grid-row: 1;
+
     float: none !important;
+    width: 100% !important;
+    max-width: none !important;
+    min-width: 0 !important;
 
-    width: calc(100% - 262px) !important;
-    margin-left: 262px !important;
-    margin-right: 0 !important;
-
-    max-width: none;
+    margin: 0 !important;
+    padding: 0 !important;
     box-sizing: border-box;
   }
 
-  /* Related posts, if present */
-  #main > .sidebar ~ .page__related {
-    float: none !important;
-    width: calc(100% - 262px) !important;
-    margin-left: 262px !important;
-  }
-}
+  /* Related posts */
 
-
-/* =========================================
-   Desktop: Final Sidebar Refinements
-   ========================================= */
-
-@media screen and (min-width: 925px) {
-
-  /* Remove fluid gutter inside fixed sidebar */
-  #main > .sidebar {
-    padding-right: 0 !important;
+  #main > .page__related {
+    grid-column: 2;
+    width: 100%;
+    min-width: 0;
   }
 
-  /* Keep photo and caption at a fixed width */
-  #main > .sidebar div.author__avatar,
-  #main > .sidebar .author__photo-caption {
+  /* Fixed photo and caption */
+
+  .sidebar div.author__avatar,
+  .sidebar .author__photo-caption {
     width: 210px !important;
     min-width: 210px !important;
     max-width: 210px !important;
   }
 
-  /* Show location information from 925px */
+  .sidebar div.author__avatar img {
+    padding: 5px !important;
+    border: 1px solid var(--global-border-color) !important;
+  }
+
+  /* Desktop profile text */
+
+  .sidebar .author__content {
+    display: block !important;
+    width: 100% !important;
+    max-width: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    text-align: left !important;
+  }
+
+  .sidebar .author__name,
+  .sidebar .author__bio {
+    text-align: left !important;
+  }
+
+  /* Desktop social links */
+
+  .sidebar .author__urls-wrapper {
+    display: block !important;
+    float: none !important;
+    width: 100% !important;
+    margin: 0 !important;
+    text-align: left !important;
+  }
+
+  .sidebar .author__urls-wrapper > button {
+    display: none !important;
+  }
+
+  .sidebar .author__urls {
+    display: block !important;
+    position: relative !important;
+    right: auto !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    z-index: auto;
+  }
+
+  .sidebar .author__urls::before,
+  .sidebar .author__urls::after {
+    display: none !important;
+  }
+
+  /* Show location on desktop */
+
   .sidebar li.author__desktop {
     display: list-item !important;
-  }
-}
-
-/* Keep desktop sidebar vertical position stable */
-
-@media screen and (min-width: 925px) {
-  #main > .sidebar {
-    margin-top: 0 !important;
   }
 }
