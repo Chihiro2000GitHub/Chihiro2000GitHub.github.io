@@ -42,3 +42,33 @@
     "vendor/font-awesome/brands"
 ;
 
+
+/* Custom profile photo settings */
+
+.author__avatar {
+  display: block !important;
+  width: 230px !important;
+  height: auto !important;
+}
+
+.author__avatar img {
+  display: block !important;
+  width: 230px !important;
+  height: 230px !important;
+  max-width: none !important;
+
+  object-fit: cover !important;
+  object-position: center 28% !important;
+
+  border-radius: 8px !important;
+}
+
+.author__photo-caption {
+  font-size: 0.68em;
+  color: #888;
+  text-align: center;
+  margin-top: 6px;
+  margin-bottom: 12px;
+  width: 230px;
+  font-style: normal;
+}
