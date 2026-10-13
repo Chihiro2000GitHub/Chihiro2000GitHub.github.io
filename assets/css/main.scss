@@ -42,17 +42,21 @@
     "vendor/font-awesome/brands"
 ;
 
-/* Profile photo: responsive settings */
 
-div.author__avatar {
+
+/* =========================================
+   Profile Photo: Shared Settings
+   ========================================= */
+
+.sidebar div.author__avatar {
   display: block !important;
+  float: none !important;
   width: 100% !important;
   max-width: 230px !important;
   height: auto !important;
-  float: none !important;
 }
 
-div.author__avatar img {
+.sidebar div.author__avatar img {
   display: block !important;
   width: 100% !important;
   max-width: 100% !important;
@@ -66,7 +70,7 @@ div.author__avatar img {
 
 /* Photo caption */
 
-.author__photo-caption {
+.sidebar .author__photo-caption {
   width: 100%;
   max-width: 230px;
   font-size: 0.68em;
@@ -75,80 +79,34 @@ div.author__avatar img {
   margin-top: 6px;
   margin-bottom: 12px;
   font-style: normal;
+  overflow-wrap: anywhere;
 }
 
-/* Mobile and tablet */
 
-@media (max-width: 1023px) {
-  div.author__avatar,
-  .author__photo-caption {
+/* =========================================
+   Mobile Layout: Below 925px
+   ========================================= */
+
+@media screen and (max-width: 924.99px) {
+
+  /* Full-width photo on homepage */
+
+  .sidebar div.author__avatar,
+  .sidebar .author__photo-caption {
+    width: 100% !important;
     max-width: 100% !important;
   }
 
-  .sidebar .author__content {
-    display: block !important;
-    width: 100%;
-    padding-left: 0 !important;
-    padding-right: 0 !important;
-  }
-}
-
-/* Tablet only */
-
-@media (min-width: 768px) and (max-width: 1023px) {
-  div.author__avatar,
-  .author__photo-caption {
-    max-width: 330px !important;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .sidebar .author__content {
-    max-width: 330px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-
-/* Smartphone only */
-
-@media (max-width: 767px) {
-  .sidebar .author__content {
-    padding-left: 24px !important;
-  }
-}
-
-/* Tablet: profile text alignment */
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-
-  .sidebar .author__content {
-    display: block !important;
-    width: 100% !important;
-    max-width: 330px !important;
-    margin-left: auto !important;
-    margin-right: auto !important;
-    padding: 0 !important;
-    text-align: center;
-    box-sizing: border-box;
-  }
-
-  .sidebar .author__bio {
-    line-height: 1.5;
-  }
-}
-
-/* Center profile information on mobile and tablet */
-
-@media screen and (max-width: 1023px) {
+  /* Center profile information */
 
   .sidebar .author__content {
     display: block !important;
     float: none !important;
     width: 100% !important;
+    max-width: none !important;
     margin-left: auto !important;
     margin-right: auto !important;
-    padding-left: 0 !important;
-    padding-right: 0 !important;
+    padding: 0 !important;
     text-align: center !important;
     box-sizing: border-box;
   }
@@ -158,11 +116,137 @@ div.author__avatar img {
     text-align: center !important;
   }
 
+  /* Center Follow button */
+
   .sidebar .author__urls-wrapper {
     display: block !important;
     float: none !important;
     width: 100% !important;
     margin: 12px auto 0 !important;
     text-align: center !important;
+  }
+
+
+  /* -----------------------------------------
+     Subpages: Compact Profile
+     ----------------------------------------- */
+
+  .sidebar .author-profile--subpage {
+    display: grid;
+    grid-template-columns: 88px minmax(0, 1fr);
+    column-gap: 16px;
+    row-gap: 8px;
+    align-items: start;
+  }
+
+  /* Small photo on subpages */
+
+  .sidebar .author-profile--subpage div.author__avatar {
+    width: 88px !important;
+    max-width: 88px !important;
+    margin: 0 !important;
+  }
+
+  /* Hide photo caption on subpages */
+
+  .sidebar .author-profile--subpage .author__photo-caption {
+    display: none !important;
+  }
+
+  /* Profile text beside photo */
+
+  .sidebar .author-profile--subpage .author__content {
+    display: block !important;
+    width: auto !important;
+    max-width: none !important;
+    min-width: 0;
+    margin: 0 !important;
+    padding: 0 !important;
+    text-align: left !important;
+  }
+
+  .sidebar .author-profile--subpage .author__name,
+  .sidebar .author-profile--subpage .author__bio {
+    text-align: left !important;
+  }
+
+  /* Follow button on subpages */
+
+  .sidebar .author-profile--subpage .author__urls-wrapper {
+    grid-column: 2;
+    display: block !important;
+    width: auto !important;
+    margin: 0 !important;
+    text-align: left !important;
+  }
+}
+
+
+/* =========================================
+   Desktop: Fixed Sidebar Width
+   ========================================= */
+
+@media screen and (min-width: 925px) {
+
+  /* Fixed width for the left sidebar */
+  #main > .sidebar {
+    width: 230px !important;
+    min-width: 230px !important;
+    max-width: 230px !important;
+    box-sizing: border-box;
+  }
+
+  /* Flexible width for the main content */
+  #main > .sidebar + .page,
+  #main > .sidebar + .archive {
+    float: none !important;
+
+    width: calc(100% - 262px) !important;
+    margin-left: 262px !important;
+    margin-right: 0 !important;
+
+    max-width: none;
+    box-sizing: border-box;
+  }
+
+  /* Related posts, if present */
+  #main > .sidebar ~ .page__related {
+    float: none !important;
+    width: calc(100% - 262px) !important;
+    margin-left: 262px !important;
+  }
+}
+
+
+/* =========================================
+   Desktop: Final Sidebar Refinements
+   ========================================= */
+
+@media screen and (min-width: 925px) {
+
+  /* Remove fluid gutter inside fixed sidebar */
+  #main > .sidebar {
+    padding-right: 0 !important;
+  }
+
+  /* Keep photo and caption at a fixed width */
+  #main > .sidebar div.author__avatar,
+  #main > .sidebar .author__photo-caption {
+    width: 210px !important;
+    min-width: 210px !important;
+    max-width: 210px !important;
+  }
+
+  /* Show location information from 925px */
+  .sidebar li.author__desktop {
+    display: list-item !important;
+  }
+}
+
+/* Keep desktop sidebar vertical position stable */
+
+@media screen and (min-width: 925px) {
+  #main > .sidebar {
+    margin-top: 0 !important;
   }
 }
