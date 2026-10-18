@@ -14,11 +14,7 @@ For more on my research motivation, please see the following page: [Why Economic
 
 ***Rational Delusions*** (joint with [Hiroki Oi](https://orcid.org/0000-0002-7900-3751))
 
-We develop a rational-inattention model of delusional belief updating in which an agent optimally chooses how to process and interpret information about the world, taking information-processing costs into account. The model provides a unified account of the “paradox of delusions,” characterized by the coexistence of two seemingly contradictory features: jumping to conclusions (JTC)—large shifts toward delusional beliefs based on weak evidence—and bias against disconfirmatory evidence (BADE)—insufficient belief revision even in response to strong counterevidence.
-
-***Social Epidemiology of Mental Health*** (joint with Takashi Oshio)
-
-We explore how multidimensional socioeconomic deprivation is associated with mental health using Japanese panel data. In particular, we consider machine-learning approaches, including decision trees and clustering, to identify data-driven deprivation profiles associated with elevated mental health risk.
+We develop a rational-inattention model that provides a decision-theoretic microfoundation for the “paradox of delusions”: the coexistence of two seemingly contradictory features of delusions—jumping to conclusions (JTC), in which weak evidence induces large belief revisions, and bias against disconfirmatory evidence (BADE), in which strong counterevidence induces little revision. In our model, an agent optimally chooses an encoding rule—that is, how to represent and interpret information about the world—by trading off the benefits of accurate information against its processing costs. Beliefs are then updated according to Bayes' rule using the resulting internal representation. Numerical simulations show that the same fixed information-processing cost can generate patterns of both JTC and BADE within a single agent. Our findings suggest that seemingly irrational belief dynamics can emerge from optimal encoding without assuming any impairment in Bayesian inference itself.
 
 ## Master's Thesis
 
