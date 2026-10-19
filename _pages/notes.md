@@ -17,4 +17,4 @@ Medical and clinical perspectives are, of course, essential for understanding me
 
 For this reason, I am interested in connecting economics with psychiatry, neuroscience, psychology, and computational approaches to the mind. My aim is not to replace psychiatric understanding with economic models, but to develop complementary tools for studying the social and behavioral dimensions of mental health. 
 
-I hope to keep learning humbly from researchers and clinicians in related fields, and to conduct careful research that can eventually contribute to the well-being of people facing mental health difficulties.
+I hope to keep learning from researchers and clinicians in related fields, and to conduct careful research that can eventually contribute to the well-being of people facing mental health difficulties.

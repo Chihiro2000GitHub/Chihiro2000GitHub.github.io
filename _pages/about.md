@@ -15,7 +15,7 @@ My research lies at the intersection of economics and computational psychiatry.
 
 I am also a research assistant at [QuantEcon](https://quantecon.org/team/). 
 
-Additionally, I am a selected participant in the [Brain Science Training Program (BSTP)](https://cbs.riken.jp/en/TP/) at the RIKEN Center for Brain Science, where I am studying neuroscience.
+Additionally, I was selected to participate in the regular course of [Brain Science Training Program (BSTP)](https://cbs.riken.jp/en/TP/) at the RIKEN Center for Brain Science (October 2026–June 2027), where I am receiving graduate-level training in neuroscience.
 
 My CV is available [here](/files/CV_ChihiroWatanabe.pdf).
 
