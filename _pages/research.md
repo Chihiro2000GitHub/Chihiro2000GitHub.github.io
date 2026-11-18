@@ -14,7 +14,13 @@ For more on my research motivation, please see the following page: [Why Economic
 
 ***Rational Delusions*** (joint with [Hiroki Oi](https://orcid.org/0000-0002-7900-3751))
 
-We develop a rational-inattention model that provides a microfoundation for the “paradox of delusions”: the coexistence of two seemingly contradictory features of delusions—jumping to conclusions (JTC), in which weak evidence induces large belief revisions, and bias against disconfirmatory evidence (BADE), in which strong counterevidence induces little revision. In our model, an agent optimally chooses an encoding rule—that is, how to represent and interpret information about the world—by trading off the benefits of accurate information against its processing costs. Beliefs are then updated according to Bayes' rule using the resulting internal representation. Numerical simulations show that the same fixed information-processing cost can generate patterns of both JTC and BADE within a single agent. Our findings suggest that seemingly irrational belief dynamics can emerge from optimal encoding without assuming any impairment in Bayesian inference itself.
+We develop a rational-inattention model that provides a microfoundation for the ``paradox of delusions'': 
+the coexistence of two seemingly contradictory features of delusions --- jumping to conclusions (JTC), 
+in which weak evidence induces large belief revisions, and bias against disconfirmatory evidence (BADE), 
+in which strong counterevidence induces little revision. In our model, an agent optimally chooses an encoding rule --- that is, 
+how to represent and interpret information about the world --- by trading off the benefits of accurate information against its processing costs. Beliefs are then updated according to Bayes' rule using the resulting internal representation. 
+Numerical simulations show that the same fixed information-processing cost can generate patterns of both JTC and BADE as the optimal encoding rule changes with prior beliefs. Moreover, stochastic encoding generates heterogeneous belief trajectories even under identical model parameters and external evidence. Our findings suggest that seemingly irrational belief dynamics can emerge from optimal encoding without assuming any impairment in Bayesian inference itself.
+
 
 ## Master's Thesis
 
