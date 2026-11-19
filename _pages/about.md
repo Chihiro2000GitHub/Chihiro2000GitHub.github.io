@@ -22,7 +22,6 @@ My CV is available [here](/files/CV_ChihiroWatanabe.pdf).
 ## Research Interests
 
 - Behavioral Economics (Rational Inattention)
-- Health Economics (Mental Health)
 - Computational Psychiatry
 
 For more details, please see my [Research](/research/) page.
